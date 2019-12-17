@@ -30,7 +30,6 @@ class VideoPage extends React.Component {
     loadVideo(videoid) {
         this.youtube.video(videoid).then(
             d => {
-                console.log(d);
                 this.setState({video: d});
             }
         )
