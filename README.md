@@ -1,4 +1,4 @@
-# Testing React
+# Learning React
 
 To run you must 
 
