@@ -80,13 +80,12 @@ export default class YoutubeAPI {
             }).then(results => {
                 if(results.data.items.length === 1) {
                     let res = results.data.items[0];
-
                     accept({
                         vid: videoId,
                         published: moment(res.snippet.publishedAt),
                         title: res.snippet.title,
                         description: res.snippet.description,
-                        thumb: res.snippet.thumbnails.maxres.url,
+                        thumb: (res.snippet.thumbnails.maxres) ? res.snippet.thumbnails.maxres.url : res.snippet.thumbnails.high.url,
                         channelTitle: res.snippet.channelTitle,
                         tags: res.snippet.tags,
                         stats: res.statistics
