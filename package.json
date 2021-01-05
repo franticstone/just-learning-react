@@ -6,7 +6,7 @@
   "dependencies": {
     "@material-ui/core": "^4.8.0",
     "@material-ui/icons": "^4.5.1",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "dark-sky": "^1.1.5",
     "fs": "0.0.1-security",
     "geolocation": "^0.2.0",
